@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/nicksnyder/go-i18n/v2/internal/plural"
+	"github.com/iota-uz/go-i18n/v2/internal/plural"
 
 	"golang.org/x/text/language"
 )
@@ -109,6 +109,10 @@ func (b *Bundle) AddMessages(tag language.Tag, messages ...*Message) error {
 		b.messageTemplates[tag][m.ID] = NewMessageTemplate(m)
 	}
 	return nil
+}
+
+func (b *Bundle) Messages() map[language.Tag]map[string]*MessageTemplate {
+	return b.messageTemplates
 }
 
 // MustAddMessages is similar to AddMessages except it panics if an error happens.

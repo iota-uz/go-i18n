@@ -1,4 +1,4 @@
-module github.com/nicksnyder/go-i18n/v2
+module github.com/iota-uz/go-i18n/v2
 
 go 1.23.0
 

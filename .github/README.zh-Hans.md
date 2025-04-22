@@ -24,7 +24,7 @@ go-i18n 是一个帮助您将 Go 程序翻译成多种语言的 Go [包](#packag
 i18n 包支持根据一组语言环境首选项来查找消息。
 
 ```go
-import "github.com/nicksnyder/go-i18n/v2/i18n"
+import "github.com/iota-uz/go-i18n/v2/i18n"
 ```
 
 创建一个 Bundle 以在应用程序的整个生命周期中使用。
